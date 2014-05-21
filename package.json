@@ -4,7 +4,7 @@
   "description": "A gulp plugin for adding headers and footers to your files",
   "main": "gulp-headerfooter.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,11 @@
     "suffix",
     "condog"
   ],
-  "author": "Glen Arrowsmith",
+  "author": {
+    "name": "Glen Arrowsmith",
+    "email": "glen.arrowsmith@gmail.cmo",
+    "url": "http://garrows.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/garrows/gulp-headerfooter/issues"
@@ -30,5 +34,9 @@
   "homepage": "https://github.com/garrows/gulp-headerfooter",
   "dependencies": {
     "through2": "^0.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-rename": "^1.2.0"
   }
 }

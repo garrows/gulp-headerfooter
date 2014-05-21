@@ -24,7 +24,6 @@ module.exports.footer = function(footer) {
 
 
 function headerfooter(file, header, footer, encoding, next) {
-    console.log("headerfooter");
 
     var bothDone = function() {
         done(file, header, footer, next);
@@ -56,7 +55,7 @@ function done(file, header, footer, next) {
 
     if (header)         { contents.push(header); }
     if (file.contents)  { contents.push(file.contents); }
-    if (file.footer)    { contents.push(file.footer); }
+    if (footer)    { contents.push(footer); }
 
     file.contents = Buffer.concat(
         contents
