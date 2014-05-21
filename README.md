@@ -1,4 +1,4 @@
-gulp-headerfooter
+gulp-headerfooter [![Build Status](https://travis-ci.org/garrows/gulp-headerfooter.svg?branch=master)](https://travis-ci.org/garrows/gulp-headerfooter) [![NPM version](https://badge.fury.io/js/gulp-headerfooter.png)](http://badge.fury.io/js/gulp-headerfooter)
 =================
 
 A gulp plugin for adding headers and footers to your files
