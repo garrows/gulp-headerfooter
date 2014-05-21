@@ -74,3 +74,10 @@ gulp.task('default', function () {
         .pipe(gulp.dest('./public/'))
 });
 ```
+
+Testing
+-------
+Run the units tests with
+```bash
+npm test
+```
