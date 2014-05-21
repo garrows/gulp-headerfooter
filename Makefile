@@ -12,4 +12,4 @@ release:
 	@make build
 	@make test
 
-.PHONY: build clean release
+.PHONY: build clean release test
