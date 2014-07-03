@@ -1,6 +1,6 @@
 {
   "name": "gulp-headerfooter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A gulp plugin for adding headers and footers to your files",
   "main": "gulp-headerfooter.js",
   "scripts": {
