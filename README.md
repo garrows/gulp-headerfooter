@@ -24,9 +24,9 @@ var headerfooter = require('gulp-headerfooter');
 
 gulp.task('default', function () {
 	gulp.src('./app/content')
-		.pipe(headerfooter.header('./app/partials/header.html'));
-		.pipe(headerfooter.footer('./app/partials/footer.html'));
-        .pipe(gulp.dest('./public/'))
+		.pipe(headerfooter.header('./app/partials/header.html'))
+		.pipe(headerfooter.footer('./app/partials/footer.html'))
+        .pipe(gulp.dest('./public/'));
 });
 ```
 
@@ -38,9 +38,9 @@ var headerfooter = require('gulp-headerfooter');
 
 gulp.task('default', function () {
     gulp.src('./app/content')
-        .pipe(headerfooter.header('<html><body>'));
-        .pipe(headerfooter.footer('</body></html>'));
-        .pipe(gulp.dest('./public/'))
+        .pipe(headerfooter.header('<html><body>'))
+        .pipe(headerfooter.footer('</body></html>'))
+        .pipe(gulp.dest('./public/'));
 });
 ```
 
@@ -56,9 +56,9 @@ var footer = fs.readFileSync('./app/partials/footer.html');
 
 gulp.task('default', function () {
     gulp.src('./app/content')
-        .pipe(headerfooter.header(header));
-        .pipe(headerfooter.footer(footer));
-        .pipe(gulp.dest('./public/'))
+        .pipe(headerfooter.header(header))
+        .pipe(headerfooter.footer(footer))
+        .pipe(gulp.dest('./public/'));
 });
 ```
 
@@ -70,8 +70,8 @@ var headerfooter = require('gulp-headerfooter');
 
 gulp.task('default', function () {
     gulp.src('./app/content')
-        .pipe(headerfooter('<html><body>', '</body></html>');
-        .pipe(gulp.dest('./public/'))
+        .pipe(headerfooter('<html><body>', '</body></html>')
+        .pipe(gulp.dest('./public/'));
 });
 ```
 
